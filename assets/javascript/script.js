@@ -36,11 +36,13 @@ function generatePassword() {
   // set initial length to zero
   var passLength = 0;
   // while length is not in range
-  while (passLength > 128 || passLength < 8) {
+  while (!(passLength <= 128 && passLength >= 8)) {
     passLength = window.prompt(
       "Enter a password length between 8 and 128 characters:"
     );
     console.log(passLength);
+    console.log(passLength>128);
+    console.log(passLength<8);
   }
   // declare character properties
   var includeLower;
