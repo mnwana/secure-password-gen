@@ -52,7 +52,7 @@ function generatePassword() {
   // until at least one character property is true
   while (!(includeLower || includeUpper || includeNumeric || includeSpecial)) {
     window.alert(
-      "Password must include one of the following options: Uppercase, lowercse, numeric or special."
+      "Password must include one of the following options: Uppercase, lowercase, numeric or special."
     );
     // ask if should include lower case
     var includeLower = window.confirm(
